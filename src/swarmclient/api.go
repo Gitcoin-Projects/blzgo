@@ -2,6 +2,14 @@ package main
 
 import "log"
 
+type API struct {
+  mnemonic string
+  address string
+  uuid int
+  chain_id string
+  endpoint string
+};
+
 //Function list
 //Account()
 //Count()
