@@ -14,17 +14,17 @@ const bip32 = require('bip32');
 const bip39 = require('bip39');
 
 */
-var App_endpoint := "http://localhost:1317"
-const Tx_command := "txs";
+var App_endpoint = "http://localhost:1317"
+const Tx_command = "txs"
 //const secp256k1 := Use secp256k1-go
-const Prefix := 'bluzelle'
-const Path := "m/44'/118'/0'/0/0"
-var Private_key;
-var Account_info := "{ account_number : "", sequence : ""}"
-var Tx_queue := []
-const Token_name := 'ubnt'
-const MAX_RETRIES := 10
-const RETRY_INTERVAL := 1000 // 1 second
+const Prefix = "bluzelle"
+const Path = "m/44'/118'/0'/0/0"
+var Private_key string
+var Account_info = "{ account_number : '', sequence : ''}"
+var Tx_queue []string
+const Token_name = "ubnt"
+const MAX_RETRIES = 10
+const RETRY_INTERVAL = 1000 // 1 second
 
 type Transaction struct {
   Type string

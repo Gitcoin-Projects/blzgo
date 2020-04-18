@@ -2,10 +2,10 @@ package main
 
 import "log"
 
-const Encode :=  ""
-const Decode := ""
-const Def_mnemonic := ""
-const App_service :=  "crud"
+const Encode =  ""
+const Decode = ""
+const Def_mnemonic = ""
+const App_service =  "crud"
 
 type API struct {
   mnemonic string
