@@ -8,6 +8,11 @@ func main() {
   SwarmClientInitialized()
 }
 
+go func SwarmClient(address string, mnemonic string, endpoint string, uuid uint32, chain_id string, ...args){
+  return API{address, mnemonic, endpoint, uuid, chain_id}
+  //TODO: Handle error
+}
+
 func SwarmClientInitialized(){
-  log.Println("Bluzelle SwarmClient initialed!")
+  log.Println("Swarm client initialed!")
 }
